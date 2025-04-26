@@ -129,10 +129,12 @@ h2 {
   
   .action span {
     font-size: 16px;
-    color: rgb(202, 157, 73);
+    color: rgb(212, 152, 41);
   }
   
 
 .home-button {
     width: 100%;
+    background-color: rgb(250, 8, 8);
+    
 }
