@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Send Money Receipt</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="form-container" id="form-container">
+    <h2>Fill Transaction Details</h2>
+    <form id="receipt-form">
+      <input type="text" id="phone-number" placeholder="Phone Number" required>
+      <input type="text" id="transaction-id" placeholder="Transaction ID" required>
+      <input type="number" id="amount" placeholder="Amount (Tk.)" required>
+      <input type="number" id="charge" placeholder="Charge (Tk.)" required>
+      <input type="datetime-local" id="time" required>
+      <button type="submit">Generate Receipt</button>
+    </form>
+  </div>
+
+  <div class="receipt-container" id="receipt-container" style="display:none;">
+    <div class="success-icon">✔️</div>
+    <h2>Send Money Successful</h2>
+    <p class="phone-number" id="display-phone-number"></p>
+
+    <div class="receipt-details">
+      <div><strong>Transaction ID:</strong> <span id="display-transaction-id"></span></div>
+      <div><strong>Amount:</strong> <span id="display-amount"></span></div>
+      <div><strong>Charge:</strong> <span id="display-charge"></span></div>
+      <div><strong>Total:</strong> <span id="display-total"></span></div>
+      <div><strong>Time:</strong> <span id="display-time"></span></div>
+    </div>
+
+    <div class="buttons">
+      <button onclick="call()">📞 Call</button>
+      <button onclick="message()">✉️ Message</button>
+    </div>
+
+    <button class="home-button" onclick="edit()">EDIT</button>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
