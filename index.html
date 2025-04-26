@@ -30,17 +30,30 @@
     <p class="phone-number" id="display-phone-number"></p>
 
     <div class="receipt-details">
-      <div><strong>Transaction ID:</strong> <span id="display-transaction-id"></span></div>
-      <div><strong>Amount:</strong> <span id="display-amount"></span></div>
-      <div><strong>Charge:</strong> <span id="display-charge"></span></div>
-      <div><strong>Total:</strong> <span id="display-total"></span></div>
-      <div><strong>Time:</strong> <span id="display-time"></span></div>
+      <div><strong>Transaction ID</strong> <span id="display-transaction-id"></span></div>
+      <div><strong>Amount</strong> <span id="display-amount"></span></div>
+      <div><strong>Charge</strong> <span id="display-charge"></span></div>
+      <div><strong>Total</strong> <span id="display-total"></span></div>
+      <div><strong>Time</strong> <span id="display-time"></span></div>
     </div>
 
     <div class="buttons">
-      <button onclick="call()">📞 Call</button>
-      <button onclick="message()">✉️ Message</button>
-    </div>
+        <div class="action" onclick="call()">
+          <div class="icon">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <span>Call</span>
+        </div>
+      
+        <div class="action" onclick="message()">
+          <div class="icon">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <span>Message</span>
+        </div>
+      </div>
+      
+      
 
     <button class="home-button" onclick="edit()">EDIT</button>
   </div>

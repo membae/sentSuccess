@@ -73,21 +73,65 @@ h2 {
 }
 
 .receipt-details {
-    text-align: left;
-    margin-bottom: 20px;
-    font-size: 14px;
-}
-
-.receipt-details div {
-    margin-bottom: 8px;
-}
-
-.buttons {
+    margin-top: 20px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     gap: 10px;
-    margin-bottom: 20px;
-}
+  }
+  
+  .receipt-details div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+  }
+  
+  .receipt-details strong {
+    color: #d85a34;
+  }
+  
+  .receipt-details span {
+    color: #555;
+    font-weight: bold; 
+    font-size: 14px;
+  }
+  
+
+  .buttons {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .action {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black; /* Text color */
+    font-weight: bold;
+  }
+  
+  .icon {
+    width: 40px;
+    height: 40px;
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    font-size: 18px;
+    color: orange;
+  }
+  
+  .action span {
+    font-size: 16px;
+    color: rgb(202, 157, 73);
+  }
+  
 
 .home-button {
     width: 100%;
