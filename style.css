@@ -47,10 +47,19 @@ button:hover {
 }
 
 .success-icon {
-    font-size: 50px;
-    color: orange;
-    margin-bottom: 10px;
+    font-size: 70px;
+    color: #FF5722; /* Border color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
 }
+
+.success-icon i {
+    font-size: 70px;
+    
+}
+
 
 h2 {
     color: #FF5722;
@@ -60,6 +69,7 @@ h2 {
 .phone-number {
     color: #555;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .receipt-details {
